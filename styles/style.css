@@ -2,4 +2,110 @@
 
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
+  width: 1024px;
+  font-family: 'IBM Plex mono', san-serif;
+  font-weight: normal;
+  background-image: url(../images/cover-image-dark.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.header {
+    position: relative;
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto 440px auto;
+    grid-template-areas: 
+        ". menu menu ."
+        "title title title ."
+        ". . text text";
+}
+
+.header::before {
+    content: '';
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    height: 25px;
+    width: 25px;
+    border-top: 1px solid var(--accent-color);
+    border-right: 1px solid var(--accent-color);
+}
+
+.header::after {
+    content: '';
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    height: 25px;
+    width: 25px;
+    border-bottom: 1px solid var(--accent-color);
+    border-left: 1px solid var(--accent-color);
+}
+
+.header__theme-menu {
+    grid-area: menu;
+    justify-self: center;
+    margin-top: 20px;
+}
+
+.header__theme-menu-list {
+    display: flex;
+    gap: 10px;
+    height: 26px;
+}
+
+.header__theme-menu-button {
+    padding: 1.5px 13px;
+    background-color: transparent;
+    border: none;
+    font-size: 18px;
+    line-height: 18px;
+    color: var(--accent-color);
+    text-transform: lowercase;
+}
+
+.header__decoration {
+    display: inline-block;
+    position: absolute;
+    top: 20px;
+    right: 29px;
+}
+
+.header__decoration::after {
+    content: '';
+    display: inline-block;
+    height: 9px;
+    width: 9px;
+    border-radius: 50%;
+    box-shadow: 0 0 4px 2px var(--accent-color);
+    background-color: var(--accent-color);
+}
+
+.header__decoration-text {
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: uppercase;
+    color: var(--accent-color);
+}
+
+.header__title {
+    grid-area: title;
+    align-self: end;
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem) ;
+    color: var(--title-color);
+    text-shadow: 4px 4px 0 var(--accent-color);
+}
+
+.header__text {
+    grid-area: text;
+    margin: 77px 20px 134px 0;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 23.4px;
+    color: var(--title-decor);
+    background-color: var(--accent-color);
 }
