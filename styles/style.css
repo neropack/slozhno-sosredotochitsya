@@ -1,15 +1,15 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
-  /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
-  width: 1024px;
-  font-family: 'IBM Plex mono', san-serif;
-  font-weight: normal;
-  background-image: url(../images/cover-image-dark.png);
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  background-position: center;
-  background-attachment: fixed;
+    /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
+    max-width: 1024px;
+    font-family: "IBM Plex mono", san-serif;
+    font-weight: normal;
+    background-image: url(../images/cover-image-dark.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    background-attachment: fixed;
 }
 
 .header {
@@ -18,14 +18,15 @@
     align-items: center;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: auto 440px auto;
-    grid-template-areas: 
+    grid-template-areas:
         ". menu menu ."
         "title title title ."
         ". . text text";
+    height: 768px;
 }
 
 .header::before {
-    content: '';
+    content: "";
     position: absolute;
     top: 20px;
     right: 20px;
@@ -36,7 +37,7 @@
 }
 
 .header::after {
-    content: '';
+    content: "";
     position: absolute;
     bottom: 20px;
     left: 20px;
@@ -68,16 +69,23 @@
     text-transform: lowercase;
 }
 
-.header__decoration {
-    display: inline-block;
+.header__decoration::before {
+    content: 'rec';
     position: absolute;
     top: 20px;
-    right: 29px;
+    right: 49px;
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: uppercase;
+    color: var(--accent-color);
 }
 
 .header__decoration::after {
     content: '';
-    display: inline-block;
+    display: block;
+    position: absolute;
+    top: 27px;
+    right: 29px;
     height: 9px;
     width: 9px;
     border-radius: 50%;
@@ -85,17 +93,10 @@
     background-color: var(--accent-color);
 }
 
-.header__decoration-text {
-    font-size: 18px;
-    line-height: 25px;
-    text-transform: uppercase;
-    color: var(--accent-color);
-}
-
 .header__title {
     grid-area: title;
     align-self: end;
-    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem) ;
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
     color: var(--title-color);
     text-shadow: 4px 4px 0 var(--accent-color);
 }
