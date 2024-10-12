@@ -60,13 +60,23 @@
 }
 
 .header__theme-menu-button {
-    padding: 1.5px 13px;
+    padding: 3px 14px;
     background-color: transparent;
     border: none;
     font-size: 18px;
     line-height: 18px;
     color: var(--accent-color);
     text-transform: lowercase;
+    cursor: pointer;
+}
+
+.header__theme-menu-button_active {
+    outline: 1px solid var(--accent-color);
+    pointer-events: none;
+}
+
+.header__theme-menu-button:hover {
+    outline: 1px solid var(--outline-color);
 }
 
 .header__decoration::before {
@@ -160,6 +170,10 @@
 .container__link {
     text-decoration: none;
     text-shadow: 2px 2px 0 var(--accent-color);
+}
+
+.container__link:hover {
+    border-bottom: 2px solid;
 }
 
 .columns {
