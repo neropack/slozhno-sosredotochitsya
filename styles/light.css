@@ -15,6 +15,7 @@
     --title-bg: #ff8dcb;
     --text-color: #353430;
     --outline-color: rgba(53, 52, 48, 1);
+    --bg-color: #fff1f8;
     background-image: url(../images/cover-image-light.png);
 }
 
@@ -31,11 +32,11 @@
         --title-bg: #ff8dcb;
         --text-color: #353430;
         --outline-color: rgba(53, 52, 48, 1);
+        --bg-color: #fff1f8;
     }
 
     .page.theme_auto {
         background-image: url(../images/cover-image-light.png);
-         background-color: #fff1f8;  /* для автотестов */
     }
 
     .page.theme_auto .header__decoration {
