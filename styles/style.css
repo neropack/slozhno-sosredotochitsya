@@ -125,7 +125,6 @@
 .header__text {
     grid-area: text;
     align-self: start;
-    /* margin: 77px 20px 134px 0; */
     margin-top: 10%;
     margin-right: 20px;
     font-size: 18px;
@@ -186,7 +185,7 @@
 
 .container__link {
     text-decoration: none;
-    text-shadow: 2px 2px 0 var(--link-shadow);
+    text-shadow: 2px 2px 0 var(--title-shadow);
 }
 
 .container__link:hover {

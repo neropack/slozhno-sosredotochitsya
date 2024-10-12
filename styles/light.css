@@ -11,9 +11,9 @@
   */
     --title-decor: #353430;
     --title-color: #ffc2e6;
+    --title-shadow: #FF8DCB;
     --accent-color: #353430;
     --title-bg: #ff8dcb;
-    --link-shadow: #FF8DCB;
     --text-color: #353430;
     --outline-color: rgba(50, 49, 45, 0.4);
     --bg-color: #fff1f8;
@@ -29,9 +29,9 @@
         /* Дублируем переменные светлой темы */
         --title-decor: #353430;
         --title-color: #ffc2e6;
+        --title-shadow: #FF8DCB;
         --accent-color: #353430;
         --title-bg: #ff8dcb;
-        --link-shadow: #FF8DCB;
         --text-color: #353430;
         --outline-color: rgba(50, 49, 45, 0.4);
         --bg-color: #fff1f8;
