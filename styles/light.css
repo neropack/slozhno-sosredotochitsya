@@ -35,6 +35,7 @@
 
     .page.theme_auto {
         background-image: url(../images/cover-image-light.png);
+         background-color: #fff1f8;  /* для автотестов */
     }
 
     .page.theme_auto .header__decoration {
