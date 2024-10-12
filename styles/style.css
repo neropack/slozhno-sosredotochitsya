@@ -79,6 +79,14 @@
     outline: 1px solid var(--outline-color);
 }
 
+.header__theme-menu-button:focus {
+    outline: none;
+}
+
+.header__theme-menu-button:focus-visible {
+    border-bottom: 1px solid var(--accent-color);
+}
+
 .header__decoration::before {
     content: 'rec';
     position: absolute;
@@ -174,6 +182,14 @@
 
 .container__link:hover {
     border-bottom: 2px solid;
+}
+
+.container__link:focus {
+    outline: none;
+}
+
+.container__link:focus-visible {
+    outline: 1px solid var(--accent-color);
 }
 
 .columns {
