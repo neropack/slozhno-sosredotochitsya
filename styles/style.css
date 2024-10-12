@@ -3,7 +3,7 @@
 .page {
     /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
     max-width: 1024px;
-    font-family: "IBM Plex mono", san-serif;
+    font-family: "IBM Plex mono", monospace, san-serif;
     font-weight: normal;
     background-image: var(--bg-image);
     background-repeat: no-repeat;
@@ -24,9 +24,10 @@
         "title title title ."
         ". . text text";
     height: 100vh;
+    min-height: 668px;
 }
 
-.header::before {
+.decorated-zone::before {
     content: "";
     position: absolute;
     top: 20px;
@@ -37,7 +38,7 @@
     border-right: 1px solid var(--accent-color);
 }
 
-.header::after {
+.decorated-zone::after {
     content: "";
     position: absolute;
     bottom: 20px;
@@ -171,6 +172,10 @@
     background-color: var(--title-bg);
 }
 
+.title-low {
+    font-weight: 400;
+}
+
 .container__text {
     margin-top: 10px;
     font-size: 18px;
@@ -181,11 +186,11 @@
 
 .container__link {
     text-decoration: none;
-    text-shadow: 2px 2px 0 var(--title-shadow);
+    text-shadow: 2px 2px 0 var(--link-shadow);
 }
 
 .container__link:hover {
-    border-bottom: 2px solid;
+    border-bottom: 1px solid;
 }
 
 .container__link:focus {
@@ -255,33 +260,11 @@
     height: 100vh;
 }
 
-.footer::before {
-    content: "";
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    height: 25px;
-    width: 25px;
-    border-top: 1px solid var(--accent-color);
-    border-right: 1px solid var(--accent-color);
-}
-
-.footer::after {
-    content: "";
-    position: absolute;
-    bottom: 20px;
-    left: 20px;
-    height: 25px;
-    width: 25px;
-    border-bottom: 1px solid var(--accent-color);
-    border-left: 1px solid var(--accent-color);
-}
-
 .footer__title {
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
     font-weight: 700;
     color: var(--title-color);
-    text-shadow: 2px 2px var(--accent-color);
+    text-shadow: 2px 2px var(--title-shadow);
 }
 
 @media (orientation: portrait) {
@@ -336,9 +319,9 @@
     }
 
     .header__theme-menu {
-        margin-right: 10px;
-        margin-bottom: 22px;
         align-self: center;
+        margin-right: 10px;
+        margin-bottom: 94px;
     }
 
     .header__title {
@@ -346,12 +329,12 @@
         font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
     }
 
-    .header::before {
+    .decorated-zone::before {
         top: 10px;
         right: 10px;
     }
 
-    .header::after {
+    .decorated-zone::after {
         bottom: 10px;
         left: 10px;
     }
@@ -412,15 +395,5 @@
 
     .footer__title {
         font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
-    }
-
-    .footer::before {
-        top: 8px;
-        right: 10px;
-    }
-
-    .footer::after {
-        bottom: 13px;
-        left: 10px;
     }
 }

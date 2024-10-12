@@ -13,8 +13,9 @@
     --title-color: #ffc2e6;
     --accent-color: #353430;
     --title-bg: #ff8dcb;
+    --link-shadow: #FF8DCB;
     --text-color: #353430;
-    --outline-color: rgba(53, 52, 48, 1);
+    --outline-color: rgba(50, 49, 45, 0.4);
     --bg-color: #fff1f8;
     --bg-image: url(../images/cover-image-light.png);
 }
@@ -30,8 +31,9 @@
         --title-color: #ffc2e6;
         --accent-color: #353430;
         --title-bg: #ff8dcb;
+        --link-shadow: #FF8DCB;
         --text-color: #353430;
-        --outline-color: rgba(53, 52, 48, 1);
+        --outline-color: rgba(50, 49, 45, 0.4);
         --bg-color: #fff1f8;
         --bg-image: url(../images/cover-image-light.png);
     }
