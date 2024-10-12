@@ -116,7 +116,7 @@
     align-self: end;
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
     color: var(--title-color);
-    text-shadow: 4px 4px 0 var(--accent-color);
+    text-shadow: 4px 4px 0 var(--title-shadow);
 }
 
 .header__text {
@@ -126,7 +126,7 @@
     font-weight: 700;
     line-height: 23.4px;
     color: var(--title-decor);
-    background-color: var(--accent-color);
+    background-color: var(--title-bg);
 }
 
 .main__section {
@@ -164,7 +164,7 @@
     font-weight: 700;
     line-height: 23.4px;
     color: var(--title-decor);
-    background-color: var(--accent-color);
+    background-color: var(--title-bg);
 }
 
 .container__text {
@@ -177,7 +177,7 @@
 
 .container__link {
     text-decoration: none;
-    text-shadow: 2px 2px 0 var(--accent-color);
+    text-shadow: 2px 2px 0 var(--title-shadow);
 }
 
 .container__link:hover {
