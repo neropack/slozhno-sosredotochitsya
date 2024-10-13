@@ -197,7 +197,7 @@
 }
 
 .container__link:focus-visible {
-    outline: 1px solid var(--accent-color);
+    outline: 1px solid var(--text-color);
 }
 
 .columns {
